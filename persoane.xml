@@ -5,9 +5,37 @@
  <prenume>Ion</prenume>
  <varsta>23</varsta>
  <adresa>
+    <tara>Romania</tara>
     <localitate>Bacau</localitate>
+    <Strada>Soarelui</Strada>
     <numar>58</numar>
     <judet>Bacau</judet>
+ </adresa>
+ </persoana>
+
+ <persoana id = "2">
+    <nume>Iliescu</nume>
+ <prenume>Maricica</prenume>
+ <varsta>26</varsta>
+ <adresa>
+    <tara>Romania</tara>
+    <localitate>Mangalia</localitate>
+    <Strada>Chismigiu</Strada>
+    <numar>65</numar>
+    <judet>Constanta</judet>
+ </adresa>
+ </persoana>
+
+ <persoana id = "3">
+    <nume>Vladimirescu</nume>
+ <prenume>Georgeta</prenume>
+ <varsta>22</varsta>
+ <adresa>
+    <tara>Romania</tara>
+    <localitate>Iasi</localitate>
+    <Strada>Unirii</Strada>
+    <numar>12</numar>
+    <judet>Iasi</judet>
  </adresa>
  </persoana>
 </persoane>

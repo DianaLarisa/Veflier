@@ -4,5 +4,10 @@
  <nume>Popescu</nume>
  <prenume>Ion</prenume>
  <varsta>23</varsta>
+ <adresa>
+    <localitate>Bacau</localitate>
+    <numar>58</numar>
+    <judet>Bacau</judet>
+ </adresa>
  </persoana>
 </persoane>

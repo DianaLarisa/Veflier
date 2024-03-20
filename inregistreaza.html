@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>inregistreaza.html</title>
+    <h1>Inregistrare</h1>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend><b>Informatii generale</b></legend>
+          <br>
+          <label for="uname">Nume utilitazor:</label>
+          <input type="text" id="uname" name="uname"><br><br>
+          <label for="password">Parola:</label>
+          <input type="password" id="password" name="password"><br><br>
+          <label for="fname">Nume:</label>
+          <input type="text" id="fname" name="fname">
+          <label for="lname">Prenume:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="phone">Telefon</label>
+          <input type="tel" id="tel" name="tel"><br><br>
+            <legend><b>Informatii personale:</b></legend>
+            <br>
+          <label for="gender">Genul:</label>
+          <select name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select><br><br>
+          <label for="favorite food">Alegeti mancarea preferata:</label>
+          <select name="gender" id="gender">
+            <option value="Pizza">Pizza</option>
+            <option value="Cartofi Prajiti">Cartofi prajiti</option>
+            <option value="Ciorba">Ciorba</option>
+            <option value="Sarmale">Sarmale</option>
+            <option value="Sushi">Sushi</option>
+            <option value="Friptura">Friptura</option>
+            <option value="Shake cu proteine">Shake cu proteine</option>
+            <option value="Afine">Afine</option>
+            <option value="Paste bolognese">Paste bolognese</option>
+            <option value="Paste pesto">Paste pesto</option>
+          </select><br><br>
+          <label for="birthday">Data nasterii:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <label for="time">Ora nasterii:</label>
+          <input type="time" id="time" name="time"><br><br>
+          <label for="varsta">Varsta:</label>
+          <input type="range" id="range" name="range" min="21" max="150"><br><br>
+          <label for="homepage">Adresa paginii personale:</label>
+          <input type="url" id="homepage" name="homepage">
+          <p>Descrierea:</p>
+          <textarea name="messaje" rows="10" columns="30"></textarea><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+</body>
+</html>

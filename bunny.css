@@ -1,0 +1,41 @@
+body{
+    background-color: #96a7dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+.cup{
+    width: 17vw;
+    height: 37vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:100%/ 30%;
+    position:relative;
+    border: 5px solid #000;
+    background: linear-gradient(to right, #ffe342, #ffe02e 30%, #fcd600);  
+    box-shadow: inset 0 20% #f7d934;
+}
+#lead{
+    width:80vw;
+    height: 5vh;
+    border: px solid #000;
+    position:relative;
+
+}
+.cup .cup-handler{
+    width: 7vw;
+    height: 17vh;
+    position:relative;
+    border: 5px solid #000;
+    border-radius: 5px 40px 40px 5px;
+    right:-72%;  
+}

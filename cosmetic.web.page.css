@@ -1,0 +1,534 @@
+:root {
+    --background: rgb(250, 225, 250);
+    --background-linear: linear-gradient(rgb(229, 194, 245), rgb(250, 225, 250));
+    --radio-input: rgb(248, 111, 248);
+    --text-color: #414141;
+    --divs-color: #1f1e1e;
+    --buttons-color: rgb(126, 90, 126);
+    --blue: rgb(246, 250, 253);
+    --sticky-content-linear: linear-gradient(rgb(228, 196, 244), rgb(235,204,246,255));
+}
+
+::selection {
+    background: rgba(180, 167, 250, 0.5);
+    /* Soft lavender color */
+    color: #1f1e1e;
+    /* Dark text color for contrast */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--background-linear);
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+.nav-element {
+    margin: 0;
+}
+
+#logo {
+    width: 100px;
+    object-fit: fill;
+
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--divs-color);
+    width: calc(100%+40px);
+    margin: 0 0 0 -40px;
+}
+
+.hover-underline {
+    position: relative;
+    /* Allows for pseudo-element positioning */
+    display: inline-block;
+    /* Required for pseudo-elements */
+    color: #333;
+    /* Default text color */
+}
+
+.hover-underline::after {
+    content: '';
+    /* Creates a pseudo-element */
+    display: block;
+    height: 1px;
+    /* Thickness of the underline */
+    width: 0;
+    /* Start with no width */
+    background: var(--divs-color);
+    /* Underline color */
+    position: absolute;
+    /* Position it absolutely */
+    left: 0;
+    /* Align to the left */
+    bottom: -5px;
+    /* Adjust vertical position */
+    transition: width 0.2s ease;
+    /* Faster transition for width */
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+    /* Expand the width on hover */
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+}
+
+.motto {
+    margin: 0px 10px 20px 40px;
+    padding: 5px 0px 30px 0;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+#hero-leaf {
+    justify-content: flex-end;
+    transform: rotate(-10deg);
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+.text-shadow {
+    text-shadow: 10px 10px 30px var(--buttons-color);
+}
+
+.btn {
+    background-color: var(--buttons-color);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 25px;
+    color: var(--background);
+}
+
+.btn,
+.arrow {
+    margin-left: 10px;
+    /* Initial margin for the arrow */
+    display: inline-block;
+    transition: transform 0.3s ease;
+    /* Add a transition to move the arrow */
+}
+
+.btn:hover .arrow {
+    transform: translateX(5px);
+    /* Move the arrow 5px to the right */
+}
+
+.how-it-works {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.icon-choose-us {
+    width: 60px;
+}
+
+#h2-choose-us {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.why-choose-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+.why-choose-us-divs {
+    align-items: center;
+    width: 250px
+}
+
+.most-loved {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+}
+
+.most-loved img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.products {
+    width: 250px;
+}
+
+.most-loved-divs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.most-loved-divs button {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.most-loved-divs:hover {
+    box-shadow: 0 0 15px var(--buttons-color);
+}
+
+.most-loved-header {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--divs-color);
+    color: var(--background);
+    border-radius: 20px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.add-to-bag-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--divs-color);
+    color: var(--buttons-color);
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+}
+
+.add-to-bag-btn:hover,
+.write:hover {
+    transform: scale(1.05);
+    /* Slightly increases the size on hover */
+}
+
+.plus {
+    font-size: 25px;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    font-weight: 900px;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    font-size: 30px;
+}
+
+#img-container {
+    width: 200px;
+    transform: rotate(-10deg);
+
+}
+
+.img-planet-fliendly {
+    display: flex;
+    justify-content: space-around;
+}
+
+.centered-h2 {
+    text-align: center;
+    padding-top: 10px
+}
+
+.check-products {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.product-caterogy {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-caterogy:hover {
+    transform: scale(1.05);
+    /* Slightly increases the size on hover */
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--buttons-color);
+    height: 500px;
+    padding: 50px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-elements {
+    color: var(--background);
+    display: flex;
+
+}
+
+.vevlier-logo {
+    display: block;
+    margin: 5px auto 0 auto;
+    padding: 0;
+    width: 300px;
+    line-height: 0;
+}
+
+.footer-divs {
+    width: 300px;
+}
+
+i {
+    color: var(--background);
+}
+
+.socials {
+    text-decoration: none;
+}
+
+.centified-doc {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logo-footer {
+    display: block;
+}
+
+#questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#progress-bar {
+    width: 300px;
+    height: 10px;
+    border: 0.5px solid var(--divs-color);
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+.questions {
+    padding: 10px;
+}
+
+#bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--divs-color);
+}
+
+.quiz-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+legend {
+    padding: 20px;
+}
+
+legend {
+    border: none;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+
+}
+
+.div-questions-quiz input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    vertical-align: middle;
+}
+
+.div-questions-quiz input[type="radio"]:checked+.custom-radio {
+    background-color: var(--radio-input);
+    border: 2px solid var(--divs-color)
+}
+
+.write {
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--background);
+    width: 350px;
+    height: 50px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: inherit;
+}
+
+#plus {
+    font-size: larger;
+}
+
+.review-star .fa-star {
+    font-size: larger;
+    cursor: pointer;
+    margin: 10px;
+    transition: color 0.2s;
+}
+
+.review-star .fa-star.highlighted {
+    color: gold;
+}
+
+.review-star {
+    padding: 10px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#reviewSection{
+    display: none;
+    width: 60%;
+}
+.review-section textarea{
+    border-radius: 1rem;
+    background-color: var(--blue);
+    padding: 20px; 
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    border: 1px solid --divs-color;
+    margin-left:5px;
+}
+#submit-review-btn{
+    margin-top:15px
+}
+.tell-us-skin{
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:0;
+    z-index: 10;
+    background-color: var(--background-linear);
+    background: var(--sticky-content-linear);
+    margin-bottom: 60px;
+}
+#subscribe-form{
+    display: none;
+   
+}
+.subscribe-form{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Max width for larger screens */
+    padding: 20px;
+    background: var(--blue);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    font-size: medium;
+    padding:10px;
+    align-items: center;
+
+}
+.subscribe-form label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  #form-for-subscribing{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  #form-for-subscribing fieldset {
+    border: none;
+    padding: 15px 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  

@@ -191,13 +191,18 @@
             <span class="fa fa-star"></span>
         </div>
         <!--hidden div reqies section-->
+        
         <div class="review-section" id="reviewSection"> 
-        <textarea placeholder="Write a review..."></textarea>
-        <button class="btn" id="submit-review-btn">Submit<span class="arrow">→</span></button>
+            <form id="review-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+        <textarea placeholder="Write a review..." id="review"></textarea>
+        <button class="btn" id="submit-review-btn" type="submit">Submit<span class="arrow">→</span></button>
+    </form>
     </div>
         </div>
+        <div id="review-container">
         <P>See our stories: </P>
-    
+    </div>
     </div>
     <footer class="footer">
         <div class="logo-footer"> <img src="https://i.imgur.com/5kGZUTn.png" class="vevlier-logo" ></div>

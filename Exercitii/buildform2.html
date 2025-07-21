@@ -1,0 +1,70 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Subscription Form</title>
+    <link rel="stylesheet" href="buildform2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="formular">
+    <h1 id="title">Subscription Form</h1>
+    <p id="description">Answear the below questions to subscribe to our online magazine</p>
+    <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Please enter your first-name:<br>
+    <input type="text" id="name" name="name" placeholder="Your first name..." required></label><br>
+    <label for="lname" id="lname">Please enter your last-name:<br>
+    <input type="text" id="lname" name="lname" placeholder="Your last name..." required></label><br>
+    <label for="city" id="city">Please enter your city address:<br>
+    <input type="text" id="city" name="city" placeholder="Enter your city address..." required></label><br>
+    <label for="email" id="email-label">Please enter your email address: <br>
+    <input id="email" name="email" required type="email" pattern="[^ @]*@[^ @]" placeholder="Enter your email address..."></label><br>
+    <label for="number" id="number-label">Please enter your phone number:<br>
+    <input type="number" id="number" name="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" min="0" max="10"  required placeholder="Enter phone number..."></label><br></fieldset>
+   <fieldset>
+      <label for="dropdown" id="dropdownn">Please select your ocupation:
+<select id="dropdown">
+  <option value="">(select one)</option>
+  <option value="1">Student</option>
+  <option value="2">Worker</option>
+  <option value="3">Antrepreneur</option>
+  <option value="4">Stay at home</option>
+  <option value="5">Other</option>
+</select>
+</label>
+</fieldset>
+<fieldset>
+<legend>Would you like to receive notifications from us? </legend>
+<input type="radio" id="notifyes" name="notification" class="inline" value="Yes" checked>Yes</label>
+<label for="notifno" class="inline"><input type="radio" id="notifno" name="notification" class="inline" value="No" >No</label>
+</fieldset>
+<fieldset>
+<legend>Would you like to subscribe to a premium account? </legend>
+<label for="premiumyes">
+  <input type="radio" id="premiumyes" name="premium" class="inline" checked value="yes">Yes</label>
+<label for="premiumno" class="inline">
+  <input type="radio" id="premiumno" name="premium" class="inline" value="no" >No</label>
+</fieldset>
+<fieldset>
+  <label for="cookies"><input id="cookies" type="checkbox" required name="cookies" class="inline" value="I accept">I accept <a href="https://www.google.com/"> cookies.</a></label><br>
+  <label for="terms"><input id="terms" name="terms" type="checkbox" value="I agree">I agree with <a href="https://www.youtube.com/">terms and conditions.</a></label><br><br>
+  <label for="comments">Please leave a comment:<br>
+    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I would like to comment..."></textarea>
+  </label><br>
+  <input type="submit" value="Submit" id="submit">
+  </fieldset>
+  </form>
+   </div>
+    
+    </body>
+   
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+

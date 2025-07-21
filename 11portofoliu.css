@@ -1,9 +1,0 @@
-#welcome-section{
-    height: 20px;
-}
-#navbar{
-    position:fixed;
-}
-@media (max-width: 1000px) {
-    body{background-color: pink;}
-}
